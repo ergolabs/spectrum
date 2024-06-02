@@ -1,3 +1,5 @@
+package sim
+
 import cats.Monad
 import cats.effect.std.Random
 import cats.effect.{Clock, Sync, Temporal}
@@ -9,10 +11,7 @@ import fs2.Stream
 
 import scala.concurrent.duration.*
 
-case class Account(value: String)
-
-case class Transaction(id: Long, account: Account, change: Long)
-case class Block(txs: Vector[Transaction], seqNum: Int)
+import sim.env.*
 
 /** L1 robust ledger system.
  */

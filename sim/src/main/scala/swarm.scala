@@ -1,3 +1,5 @@
+package sim
+
 import cats.effect.kernel.Async
 import cats.effect.std.{AtomicCell, Random}
 import cats.effect.syntax.spawn.*

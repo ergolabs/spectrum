@@ -3,6 +3,8 @@ import cats.syntax.show.*
 
 import scala.concurrent.duration.*
 
+import sim.*
+
 object Main extends IOApp {
   override def run(args: List[String]): IO[ExitCode] =
     for

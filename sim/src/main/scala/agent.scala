@@ -1,3 +1,5 @@
+package sim
+
 import cats.Monad
 import cats.effect.kernel.{Async, Clock}
 import cats.effect.std.{AtomicCell, Queue}
